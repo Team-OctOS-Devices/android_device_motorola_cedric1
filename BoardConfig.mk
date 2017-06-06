@@ -83,13 +83,10 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_NO_CHARGER_LED := true
 
-<<<<<<< HEAD
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 
-=======
->>>>>>> 26331405524f5a129dd21df0cad7eefa9e0ffcab
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
