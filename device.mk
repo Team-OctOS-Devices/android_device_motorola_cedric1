@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
+# CMActions
+PRODUCT_PACKAGES += \
+    CMActions
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -114,9 +118,10 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.msm8937 \
     libbson \
     libshim_camera \
-    Camera2
+    Snap
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8937_mot_camera.xml:system/etc/camera/msm8937_mot_camera.xml \
