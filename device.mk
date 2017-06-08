@@ -135,6 +135,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/lowi.conf:system/etc/lowi.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
+
+# CMActions
+PRODUCT_PACKAGES += \
+    CMActions
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
