@@ -151,6 +151,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite
 
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni \
+    fmhalservice \
+    libqcomfm_jni
+
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
