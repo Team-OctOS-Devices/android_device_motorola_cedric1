@@ -20,4 +20,3 @@ Camera  | 13 MP, phase detection autofocus, LED flash
 Copyright 2017 - The LineageOS Project.
 
 ![Moto G5](https://i.gadgets360cdn.com/large/moto_g5_sapphire_blue_1490185457740.png?output-quality=80 "Moto G5")
-# android_device_motorola_cedric1
