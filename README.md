@@ -17,6 +17,6 @@ Battery | Li-Ion 2800mAh battery
 Display | 1080 x 1920 pixels, 5.5 inches (~441 ppi pixel density)
 Camera  | 13 MP, phase detection autofocus, LED flash
 
-Copyright 2017 - The LineageOS Project.
+Copyright 2017 - The TeamOctOS Project.
 
 ![Moto G5](https://i.gadgets360cdn.com/large/moto_g5_sapphire_blue_1490185457740.png?output-quality=80 "Moto G5")
