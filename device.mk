@@ -58,10 +58,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -127,6 +123,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/mot_ov5695_chromatix.xml:system/etc/camera/mot_ov5695_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/mot_imx258_chromatix.xml:system/etc/camera/mot_imx258_chromatix.xml
 
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8937
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
     $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
@@ -134,6 +134,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/lowi.conf:system/etc/lowi.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
+
+# CMActions
+PRODUCT_PACKAGES += \
+    CMActions
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
@@ -150,13 +155,6 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite
-
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni \
-    fmhalservice \
-    libqcomfm_jni
 
 # Ebtables
 PRODUCT_PACKAGES += \
