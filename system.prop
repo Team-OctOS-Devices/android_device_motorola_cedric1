@@ -104,7 +104,7 @@ persist.ims.disableDebugLogs=0
 persist.ims.disableIMSLogs=0
 persist.ims.disableQXDMLogs=0
 persist.ims.rcs=false
-persist.ims.volte=false
+persist.ims.volte=true
 persist.ims.vt=false
 persist.ims.vt.epdg=false
 persist.mm.sta.enable=0
@@ -196,6 +196,3 @@ ro.usb.bpteth_adb=0x2ee8
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.at_library=libqti-at.so
 ro.vendor.gt_library=libqti-gt.so
-
-# VoLTE
-ro.config.hw_volte_on=true
