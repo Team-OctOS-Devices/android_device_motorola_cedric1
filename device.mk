@@ -233,6 +233,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mmi.touch.sh \
     init.qcom.ril.sh \
+    init.qcom.bt.sh \
+    init.qcom.fm.sh \
     wlan_carrier_bin.sh
 
 PRODUCT_PACKAGES += \
@@ -249,7 +251,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
-    rmnetcli
+    rmnetcli \
+    libshim_ril
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -289,7 +292,7 @@ PRODUCT_PACKAGES += \
     WCNSS_wlan_dictionary.dat
 
 PRODUCT_COPY_FILES += \
-    kernel/motorola/cedric/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    kernel/motorola/msm8937/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
