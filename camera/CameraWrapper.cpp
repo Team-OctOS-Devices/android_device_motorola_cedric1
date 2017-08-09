@@ -61,7 +61,7 @@ camera_module_t HAL_MODULE_INFO_SYM = {
         .version_major = 1,
         .version_minor = 0,
         .id = CAMERA_HARDWARE_MODULE_ID,
-        .name = "Moto Z Play Camera Wrapper",
+        .name = "Moto Camera Wrapper",
         .author = "The LineageOS Project",
         .methods = &camera_module_methods,
         .dso = NULL, /* remove compilation warnings */
@@ -118,17 +118,6 @@ static char *camera_fixup_getparams(int id, const char *settings)
 
     params.set("longshot-supported", "false");
     params.set("video-stabilization-supported", "false");
-
-    params.set("zsl", "on");
-    params.set("visionfw", "on");
-    params.set("pdaf-control-mode", "on");
-    params.set("af-roi-enabled", "on");
-    params.set("scene-mode", "auto_hdr");
-    //params.set("auto-exposure", "frame-average");
-    //params.set("dbg-log-aec", "frame-average");
-    //params.set("dbg-log-awb", "frame-average");
-    //params.set("dbg-log-af", "on");
-
 
 #if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
